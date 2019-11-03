@@ -3,6 +3,7 @@
   "version": "0.0.9",
   "description": "Default template for client-base modules (cbm)",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "jest tests",
     "build": "babel ./src --out-file index.js -s inline",

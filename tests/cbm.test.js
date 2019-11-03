@@ -14,8 +14,8 @@ describe("CBM specification tests", () => {
     });
 
     it("should render without any complications", () => {
+        console.error = jest.fn();
         const mockData = "Test data";
-
         const cbm = create(
             <CBM
                 data={mockData}
@@ -23,6 +23,8 @@ describe("CBM specification tests", () => {
                 onRefresh={() => {}}
             />
         );
+
         expect(cbm.toTree()).toBeTruthy();
+        expect(console.error).not.toBeCalled();
     });
 });
