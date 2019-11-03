@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - 10
+
+script:
+  - npm run build
+  - npm test
+
+notifications:
+  slack: serverstate:PcPgLd43m8TKiXrxfHb1mKff
