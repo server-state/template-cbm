@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Typography } from '@material-ui/core';
 
 
-function MyComponent(props) {
+function MyCBM(props) {
     return (
         <div>
             <Typography>
@@ -16,8 +16,8 @@ function MyComponent(props) {
     );
 }
 
-MyComponent.propTypes = {
-    data: PropTypes.oneOfType([PropTypes.object, PropTypes.array]).isRequired
+MyCBM.propTypes = {
+    data: PropTypes.node.isRequired
 };
 
-export default MyComponent;
+export default MyCBM;
