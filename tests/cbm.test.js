@@ -1,7 +1,6 @@
 import React from 'react';
 import { create } from "react-test-renderer";
-// Add here your CBM name
-import { MyCBM as CBM, info } from "../src";
+import CBM from "../src";
 
 
 test('two plus two is four', () => {
@@ -10,21 +9,20 @@ test('two plus two is four', () => {
 
 describe("CBM specification tests", () => {
     it("should contain all necessary infos", () => {
-        expect(info).toHaveProperty("name");
+        expect(CBM.info).toHaveProperty("name");
     });
 
     it("should render without any complications", () => {
         console.error = jest.fn();
         const mockData = "Test data";
         const cbm = create(
-            <CBM
+            <CBM.component
                 data={mockData}
                 onRegisterAction={() => {}}
                 onRefresh={() => {}}
             />
         );
 
-        expect(cbm.toTree()).toBeTruthy();
-        expect(console.error).not.toBeCalled();
+        expect(cbm).toMatchSnapshot();
     });
 });

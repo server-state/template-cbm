@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CBM specification tests should render without any complications 1`] = `
+<div>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    My CBM module!
+  </p>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Data: 
+    Test data
+  </p>
+</div>
+`;

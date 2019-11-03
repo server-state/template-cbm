@@ -3,8 +3,7 @@ node_js:
   - 10
 
 script:
-  - npm run build
-  - npm test
+  - yarn prepare
 
 notifications:
   slack: serverstate:PcPgLd43m8TKiXrxfHb1mKff

@@ -1,7 +1,9 @@
 tests
-component/src
+src
+.github
+
 .eslintrc.js
 .travis.yml
 .babelrc
-.github
+babel.config.js
 .idea
