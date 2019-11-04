@@ -1,6 +1,7 @@
 tests
 src
 .github
+wrapper
 
 .eslintrc.js
 .travis.yml
