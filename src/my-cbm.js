@@ -2,12 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Typography, Button } from '@material-ui/core';
 
-
 function MyCBM(props) {
     return (
         <div>
             <Typography>
-                My CBM module!
+                My CBM module! With changes
             </Typography>
             <Typography>
                 Data: {JSON.stringify(props.data, null, 2)}
@@ -15,6 +14,7 @@ function MyCBM(props) {
             <Button variant="contained">
                 Click Me!
             </Button>
+            <div style={{ 'height': 1200 }} />
         </div>
     );
 }

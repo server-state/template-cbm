@@ -2,11 +2,12 @@ import React from 'react';
 import { ThemeProvider } from '@material-ui/styles';
 
 import theme from './theme';
-import AppBar from './app-bar';
+import AppBarTemporary from './components/app-bar-temporary';
+import AppBarResponsive from './components/app-bar-responsive';
+import SimpleDashboard from './components/simple-dashboard';
 
 import CBM from '../src';
 import sampleData from '../src/sample-data';
-import SimpleDashboard from './simple-dashboard';
 
 
 const defaultData = [{
@@ -26,21 +27,30 @@ export default class App extends React.Component {
         this.handleSelected = this.handleSelected.bind(this);
     }
 
-    handleSelected(name) {
-        for (const dataSet of this.state.data) {
-            if (dataSet.name === name) {
-                this.setState({
-                    selected: dataSet
-                });
-                return;
-            }
-        }
+    handleSelected(selectedName) {
+        this.setState({
+            selected: this.state.data.find(({ name }) => name === selectedName)
+        });
     }
 
     render() {
-        return(
+        return (
             <ThemeProvider theme={theme}>
-                <AppBar
+                {/* Temporary Drawer */}
+                {/* <AppBarTemporary
+                    info={CBM.info}
+                    data={this.state.data}
+                    selected={this.state.selected}
+                    onSelected={this.handleSelected}
+                />
+                <SimpleDashboard
+                    info={CBM.info}
+                >
+                    <CBM.component data={this.state.selected.data} />
+                </SimpleDashboard> */}
+
+                {/* Persistent Drawer */}
+                <AppBarResponsive
                     info={CBM.info}
                     data={this.state.data}
                     selected={this.state.selected}
@@ -48,11 +58,10 @@ export default class App extends React.Component {
                 >
                     <SimpleDashboard
                         info={CBM.info}
-                        data={this.state.selected.data}
                     >
                         <CBM.component data={this.state.selected.data} />
                     </SimpleDashboard>
-                </AppBar>
+                </AppBarResponsive>
             </ThemeProvider>
         );
     }

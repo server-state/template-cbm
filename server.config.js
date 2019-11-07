@@ -22,8 +22,8 @@ module.exports = {
         hot: true,
         host: '127.0.0.1',
         port: 3001,
-        stats: 'errors-only',
-        noInfo: true
+        stats: 'minimal',
+        // noInfo: true
     },
     module: {
         rules: [
