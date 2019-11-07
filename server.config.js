@@ -3,6 +3,8 @@ const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 const appRoot = path.resolve(process.cwd());
+const contentBase = path.resolve(appRoot, 'wrapper/public');
+const templateHTML = path.join(appRoot, 'wrapper/public/index.html');
 
 module.exports = {
     mode: 'development',
@@ -22,8 +24,10 @@ module.exports = {
         hot: true,
         host: '127.0.0.1',
         port: 3001,
-        stats: 'minimal',
-        // noInfo: true
+        clientLogLevel: 'none',
+        contentBase,
+        publicPath: '/',
+        quiet: true
     },
     module: {
         rules: [
@@ -55,7 +59,7 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            template: path.join(appRoot, 'wrapper/public/index.html'),
+            template: templateHTML,
             filename: 'index.html',
             inject: 'body'
         }),
