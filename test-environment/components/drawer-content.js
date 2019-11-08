@@ -1,16 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles, Typography, FormControl, FormLabel, RadioGroup, FormControlLabel, Radio } from '@material-ui/core';
-
-
+import {
+    makeStyles, Typography,
+    FormControl, FormLabel, RadioGroup, FormControlLabel, Radio, TextField
+} from '@material-ui/core';
 
 
 const useStyles = makeStyles(theme => ({
     infoBox: {
         padding: theme.spacing(1, 2)
-    },
-    FormControl: {
-        margin: theme.spacing(1, 3)
     }
 }));
 
@@ -19,6 +17,10 @@ function DrawerContent(props) {
 
     const handleSelected = (event) => {
         props.onSelected(event.target.value);
+    };
+
+    const handleChange = (event) => {
+        props.onChange(event.target.value);
     };
 
     return (
@@ -50,8 +52,8 @@ function DrawerContent(props) {
                 </Typography>
             </div>
 
-            <div>
-                <FormControl component="fieldset" className={classes.FormControl}>
+            <div className={classes.infoBox}>
+                <FormControl component="fieldset" fullWidth={true}>
                     <FormLabel component="legend">Data Selection</FormLabel>
                     <RadioGroup aria-label="data" name="data" value={props.selected.name} onChange={handleSelected}>
                         {props.data.map((dataSet) => (
@@ -62,7 +64,22 @@ function DrawerContent(props) {
                                 control={<Radio />}
                             />
                         ))}
+                        <FormControlLabel
+                            value="Custom"
+                            label="Custom"
+                            control={<Radio />}
+                        />
                     </RadioGroup>
+                    <TextField
+                        label="Data sample"
+                        multiline
+                        value={props.textFieldValue}
+                        onChange={handleChange}
+                        className={classes.textField}
+                        margin="dense"
+                        variant="outlined"
+                        error={props.isError}
+                    />
                 </FormControl>
             </div>
         </div>
@@ -73,7 +90,10 @@ DrawerContent.propTypes = {
     info: PropTypes.object.isRequired,
     data: PropTypes.array.isRequired,
     selected: PropTypes.any.isRequired,
-    onSelected: PropTypes.func.isRequired
+    onSelected: PropTypes.func.isRequired,
+    textFieldValue: PropTypes.any.isRequired,
+    onChange: PropTypes.func.isRequired,
+    isError: PropTypes.bool
 };
 
 export default DrawerContent;

@@ -5,8 +5,6 @@ import {
     AppBar as MuiAppBar, Toolbar, Drawer, useTheme } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 
-import DrawerContent from './drawer-content';
-
 
 const drawerWidth = 240; // px
 const defaultOpen = false;
@@ -64,12 +62,7 @@ function AppBar(props) {
                             keepMounted: true // better mobile performance
                         }}
                     >
-                        <DrawerContent
-                            info={props.info}
-                            data={props.data}
-                            selected={props.selected}
-                            onSelected={props.onSelected}
-                        />
+                        {props.drawerContent}
                     </Drawer>
                 </Toolbar>
             </MuiAppBar>
@@ -78,10 +71,7 @@ function AppBar(props) {
 }
 
 AppBar.propTypes = {
-    info: PropTypes.object.isRequired,
-    data: PropTypes.array.isRequired,
-    selected: PropTypes.any.isRequired,
-    onSelected: PropTypes.func.isRequired
+    drawerContent: PropTypes.element
 };
 
 export default AppBar;

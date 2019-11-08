@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import { makeStyles, AppBar as MuiAppBar, Toolbar, Typography, IconButton, Hidden, Drawer, useTheme } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 
-import DrawerContent from './drawer-content';
-
 
 const drawerWidth = 240; // px
 const defaultOpen = false;
@@ -94,12 +92,7 @@ function AppBar(props) {
                             keepMounted: true // better mobile performance
                         }}
                     >
-                        <DrawerContent
-                            info={props.info}
-                            data={props.data}
-                            selected={props.selected}
-                            onSelected={props.onSelected}
-                        />
+                        {props.drawerContent}
                     </Drawer>
                 </Hidden>
                 {/* Persistent Drawer */}
@@ -113,12 +106,7 @@ function AppBar(props) {
                         open
                     >
                         <div className={classes.toolbar} />
-                        <DrawerContent
-                            info={props.info}
-                            data={props.data}
-                            selected={props.selected}
-                            onSelected={props.onSelected}
-                        />
+                        {props.drawerContent}
                     </Drawer>
                 </Hidden>
             </nav>
@@ -128,10 +116,7 @@ function AppBar(props) {
 
 AppBar.propTypes = {
     children: PropTypes.element,
-    info: PropTypes.object.isRequired,
-    data: PropTypes.array.isRequired,
-    selected: PropTypes.any.isRequired,
-    onSelected: PropTypes.func.isRequired
+    drawerContent: PropTypes.element
 };
 
 export default AppBar;
