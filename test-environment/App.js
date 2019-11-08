@@ -8,7 +8,7 @@ import AppBarResponsive from './components/app-bar-responsive';
 import SimpleDashboard from './components/simple-dashboard';
 
 import CBM from '../src';
-import sampleData from '../src/sample-data';
+import sampleData from '../src/sample-data.js';
 
 
 const defaultData = [{
@@ -16,9 +16,25 @@ const defaultData = [{
     data: 'Hello World!'
 }];
 
+function checkSampleData(data) {
+    if (!Array.isArray(data)) {
+        throw 'SampleData is not an array.';
+    }
+
+    for (let i = 0; i < data.length; i++) {
+        if (typeof data[i] !== 'object')
+            throw `Data sample ${i} is not an object.`;
+        if (typeof data[i].name !== 'string')
+            throw `Data sample ${i} has an invalid name property.`;
+    }
+}
+
 export default class App extends React.Component {
     constructor(props) {
         super(props);
+
+        checkSampleData(sampleData);
+
         const data = sampleData || defaultData;
         this.state = {
             data,
