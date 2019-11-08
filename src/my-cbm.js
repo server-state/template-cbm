@@ -14,7 +14,6 @@ function MyCBM(props) {
             <Button variant="contained">
                 Click Me!
             </Button>
-            <div style={{ 'height': 200 }} />
         </div>
     );
 }

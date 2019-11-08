@@ -1,33 +1,20 @@
-const path = require("path");
 const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
-const appRoot = path.resolve(process.cwd());
-const contentBase = path.resolve(appRoot, 'wrapper/public');
-const templateHTML = path.join(appRoot, 'wrapper/public/index.html');
+const paths = require('./paths');
 
 module.exports = {
     mode: 'development',
     entry: {
-        main: path.join(appRoot, 'wrapper/index.js')
+        main: paths.entryJS
     },
     output: {
         filename: 'bundle.js',
-        path: path.join(appRoot, 'dist/'),
+        path: paths.outputPath,
         publicPath: '/'
     },
     resolve: {
         extensions: ['.js', '.jsx']
-    },
-    devServer: {
-        compress: true,
-        hot: true,
-        host: '127.0.0.1',
-        port: 3001,
-        clientLogLevel: 'none',
-        contentBase,
-        publicPath: '/',
-        quiet: true
     },
     module: {
         rules: [
@@ -59,7 +46,7 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            template: templateHTML,
+            template: paths.entryHTML,
             filename: 'index.html',
             inject: 'body'
         }),

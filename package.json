@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "test": "jest tests",
-    "start": "webpack-dev-server --config server.config.js",
+    "start": "node ./test-environment/scripts/start.js",
     "build": "webpack --config webpack.config.js --mode production",
     "prepublish": "npm run build && npm run test"
   },
