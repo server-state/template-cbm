@@ -17,6 +17,7 @@ The `src/index.js` references the necessary React component and the module info.
 You can change it any time and review your changes in the given test environment.
 You can use all Material-UI Components out-of-the-box and the current server-state client-base
 `test-environment/theme.js` which resides in the `test-environment` folder.
+
 If you want to change the sample data, simply edit the `src/sample-data.js`.
 Add, change or remove any objects from the list, the test environment dynamically changes the data selections.
 Please sustain the current format of an array containing objects with the keys `name` and `data`.
