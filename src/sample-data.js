@@ -2,8 +2,8 @@ const sampleData = [
     {
         name: 'DataSet 1',
         data: {
-            lol: 'lal',
-            test: 'test2'
+            prop1: 'hello',
+            prop2: 'world'
         }
     },
     {
