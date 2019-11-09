@@ -3,8 +3,7 @@ import { ThemeProvider } from '@material-ui/styles';
 
 import theme from './theme';
 import DrawerContent from './components/drawer-content';
-import AppBarTemporary from './components/app-bar-temporary';
-import AppBarResponsive from './components/app-bar-responsive';
+import AppBar from './components/app-bar';
 import SimpleDashboard from './components/simple-dashboard';
 
 import CBM from '../src';
@@ -77,28 +76,7 @@ export default class App extends React.Component {
     render() {
         return (
             <ThemeProvider theme={theme}>
-                {/* Temporary Drawer */}
-                {/* <AppBarTemporary
-                    drawerContent={
-                        <DrawerContent
-                            info={CBM.info}
-                            data={this.state.data}
-                            selected={this.state.selected}
-                            onSelected={this.handleSelected}
-                            textFieldValue={this.state.textFieldValue}
-                            onChange={this.handleChange}
-                            isError={this.state.isError}
-                        />
-                    }
-                />
-                <SimpleDashboard
-                    info={CBM.info}
-                >
-                    <CBM.component data={this.state.selected.data} />
-                </SimpleDashboard> */}
-
-                {/* Persistent Drawer */}
-                <AppBarResponsive
+                <AppBar
                     drawerContent={
                         <DrawerContent
                             info={CBM.info}
@@ -116,7 +94,7 @@ export default class App extends React.Component {
                     >
                         <CBM.component data={this.state.selected.data} />
                     </SimpleDashboard>
-                </AppBarResponsive>
+                </AppBar>
             </ThemeProvider>
         );
     }
