@@ -11,7 +11,7 @@ exports[`CBM specification tests should render without any complications 1`] = `
     className="MuiTypography-root MuiTypography-body1"
   >
     Data: 
-    Test data
+    "Test data"
   </p>
 </div>
 `;

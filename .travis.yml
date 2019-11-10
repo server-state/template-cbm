@@ -3,7 +3,7 @@ node_js:
   - 10
 
 script:
-  - yarn prepare
+  - yarn prepublish
 
 notifications:
   slack: serverstate:PcPgLd43m8TKiXrxfHb1mKff
