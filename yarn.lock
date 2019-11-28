@@ -953,6 +953,29 @@
     prop-types "^15.7.2"
     react-is "^16.8.6"
 
+"@server-state/cbm-cli@https://github.com/server-state/cbm-cli":
+  version "0.0.9"
+  resolved "https://github.com/server-state/cbm-cli#2417afdea5411e208e22413ba4033a9705faff44"
+  dependencies:
+    "@babel/cli" "^7.6.4"
+    "@babel/core" "^7.6.4"
+    "@babel/preset-env" "^7.6.3"
+    "@babel/preset-react" "^7.6.3"
+    "@material-ui/core" "^4.5.2"
+    "@material-ui/icons" "^4.5.1"
+    "@material-ui/styles" "^4.5.2"
+    babel-loader "^8.0.6"
+    html-webpack-plugin "^3.2.0"
+    jest "^24.9.0"
+    prop-types "^15.7.2"
+    react "^16.11.0"
+    react-dom "^16.11.0"
+    react-test-renderer "^16.11.0"
+    url-loader "^2.2.0"
+    webpack "^4.41.2"
+    webpack-cli "^3.3.10"
+    webpack-dev-server "^3.9.0"
+
 "@types/babel__core@^7.1.0":
   version "7.1.3"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.3.tgz#e441ea7df63cd080dfcd02ab199e6d16a735fc30"
