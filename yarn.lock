@@ -892,7 +892,7 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@material-ui/core@^4.7.0", "@material-ui/core@^4.7.1":
+"@material-ui/core@^4.7.1":
   version "4.7.1"
   resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.7.1.tgz#87b83da3f6adf45772c0a2be9fd9d162e026f10c"
   integrity sha512-gqbZqpwUT5/59KTrWyA9Mr9s8NaNyfWHlEQToM1tfpiHqrIJajLVg2ZgVDzExvN985v2YQIfbuTNVzJDOnM28Q==
@@ -919,7 +919,7 @@
   dependencies:
     "@babel/runtime" "^7.4.4"
 
-"@material-ui/styles@^4.5.2", "@material-ui/styles@^4.6.0", "@material-ui/styles@^4.7.1":
+"@material-ui/styles@^4.6.0", "@material-ui/styles@^4.7.1":
   version "4.7.1"
   resolved "https://registry.yarnpkg.com/@material-ui/styles/-/styles-4.7.1.tgz#48fa70f06441c35e301a9c4b6c825526a97b7a29"
   integrity sha512-BBfxVThaPrglqHmKtSdrZJxnbFGJqKdZ5ZvDarj3HsmkteGCXsP1ohrDi5TWoa5JEJFo9S6q6NywqsENZn9rZA==
@@ -968,16 +968,17 @@
 
 "@server-state/cbm-cli@https://github.com/server-state/cbm-cli":
   version "0.0.9"
-  resolved "https://github.com/server-state/cbm-cli#62cc63b6711d227f26486a8fcb521cf9920cb9a4"
+  resolved "https://github.com/server-state/cbm-cli#be317e999ed835ca80df08924129dc8c5235a9ff"
   dependencies:
     "@babel/cli" "^7.7.4"
     "@babel/core" "^7.7.4"
     "@babel/preset-env" "^7.7.4"
     "@babel/preset-react" "^7.6.3"
-    "@material-ui/core" "^4.7.0"
+    "@material-ui/core" "^4.7.1"
     "@material-ui/icons" "^4.5.1"
-    "@material-ui/styles" "^4.5.2"
+    "@material-ui/styles" "^4.7.1"
     babel-loader "^8.0.6"
+    cli "^1.0.1"
     html-webpack-plugin "^3.2.0"
     jest "^24.9.0"
     prop-types "^15.7.2"
@@ -1945,6 +1946,14 @@ clean-css@4.2.x:
   dependencies:
     source-map "~0.6.0"
 
+cli@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/cli/-/cli-1.0.1.tgz#22817534f24bfa4950c34d532d48ecbc621b8c14"
+  integrity sha1-IoF1NPJL+klQw01TLUjsvGIbjBQ=
+  dependencies:
+    exit "0.1.2"
+    glob "^7.1.1"
+
 cliui@^4.0.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/cliui/-/cliui-4.1.0.tgz#348422dbe82d800b3022eef4f6ac10bf2e4d1b49"
@@ -2757,7 +2766,7 @@ execa@^1.0.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
-exit@^0.1.2:
+exit@0.1.2, exit@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/exit/-/exit-0.1.2.tgz#0632638f8d877cc82107d30a0fff1a17cba1cd0c"
   integrity sha1-BjJjj42HfMghB9MKD/8aF8uhzQw=
