@@ -968,7 +968,8 @@
 
 "@server-state/cbm-cli@https://github.com/server-state/cbm-cli":
   version "0.0.9"
-  resolved "https://github.com/server-state/cbm-cli#be317e999ed835ca80df08924129dc8c5235a9ff"
+  uid f7bcadbb424980e5ea2789b55691688911068117
+  resolved "https://github.com/server-state/cbm-cli#f7bcadbb424980e5ea2789b55691688911068117"
   dependencies:
     "@babel/cli" "^7.7.4"
     "@babel/core" "^7.7.4"
