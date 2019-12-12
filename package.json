@@ -5,9 +5,9 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "cbm-cli test",
-    "test:e2e": "cbm-cli test-e2e",
-    "start": "cbm-cli start",
+    "test": "server-state test",
+    "test:e2e": "server-state test-e2e",
+    "start": "server-state start",
     "build": "webpack --config webpack.config.js --mode production",
     "prepublish": "npm run build && npm run test"
   },
