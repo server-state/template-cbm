@@ -980,14 +980,14 @@
 
 "@server-state/cbm-cli@https://github.com/server-state/cbm-cli":
   version "0.0.9"
-  uid dff06b7e8ac7577912ba2ad01d31fe8d43537176
-  resolved "https://github.com/server-state/cbm-cli#dff06b7e8ac7577912ba2ad01d31fe8d43537176"
+  uid "275965437c932e0281f070918dfed507418ab60b"
+  resolved "https://github.com/server-state/cbm-cli#275965437c932e0281f070918dfed507418ab60b"
   dependencies:
     "@babel/cli" "^7.7.5"
     "@babel/core" "^7.7.5"
     "@babel/preset-env" "^7.7.6"
     "@babel/preset-react" "^7.6.3"
-    "@material-ui/core" "^4.7.2"
+    "@material-ui/core" "^4.8.0"
     "@material-ui/icons" "^4.5.1"
     "@material-ui/styles" "^4.7.1"
     "@server-state/cbm-test-environment" "https://github.com/server-state/cbm-test-environment"
@@ -1000,7 +1000,7 @@
     react-dom "^16.11.0"
     react-test-renderer "^16.11.0"
     url-loader "^3.0.0"
-    webpack "^4.41.2"
+    webpack "^4.41.3"
     webpack-cli "^3.3.10"
     webpack-dev-server "^3.9.0"
 
