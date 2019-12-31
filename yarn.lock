@@ -980,8 +980,8 @@
 
 "@server-state/cbm-cli@https://github.com/server-state/cbm-cli":
   version "0.0.9"
-  uid "0b34dc77d20fbd2255c811c2939522d49f452b8c"
-  resolved "https://github.com/server-state/cbm-cli#0b34dc77d20fbd2255c811c2939522d49f452b8c"
+  uid "2a3550ffc423d81b78c13e99b535cdf6c8f754d4"
+  resolved "https://github.com/server-state/cbm-cli#2a3550ffc423d81b78c13e99b535cdf6c8f754d4"
   dependencies:
     "@babel/cli" "^7.7.5"
     "@babel/core" "^7.7.5"
@@ -989,7 +989,7 @@
     "@babel/preset-react" "^7.6.3"
     "@material-ui/core" "^4.8.1"
     "@material-ui/icons" "^4.5.1"
-    "@material-ui/styles" "^4.7.1"
+    "@material-ui/styles" "^4.8.2"
     "@server-state/cbm-test-environment" "https://github.com/server-state/cbm-test-environment"
     babel-loader "^8.0.6"
     cli "^1.0.1"
@@ -1000,7 +1000,7 @@
     react-dom "^16.11.0"
     react-test-renderer "^16.11.0"
     url-loader "^3.0.0"
-    webpack "^4.41.4"
+    webpack "^4.41.5"
     webpack-cli "^3.3.10"
     webpack-dev-server "^3.10.1"
 
@@ -7095,7 +7095,7 @@ webpack-sources@^1.4.0, webpack-sources@^1.4.1:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@^4.41.2, webpack@^4.41.4, webpack@^4.41.5:
+webpack@^4.41.2, webpack@^4.41.5:
   version "4.41.5"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.41.5.tgz#3210f1886bce5310e62bb97204d18c263341b77c"
   integrity sha512-wp0Co4vpyumnp3KlkmpM5LWuzvZYayDwM2n17EHFr4qxBBbRokC7DJawPJC7TfSFZ9HZ6GsdH40EBj4UV0nmpw==
