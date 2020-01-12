@@ -738,7 +738,7 @@
     levenary "^1.1.0"
     semver "^5.5.0"
 
-"@babel/preset-react@^7.6.3", "@babel/preset-react@^7.7.4", "@babel/preset-react@^7.8.0":
+"@babel/preset-react@^7.7.4", "@babel/preset-react@^7.8.0":
   version "7.8.0"
   resolved "https://registry.yarnpkg.com/@babel/preset-react/-/preset-react-7.8.0.tgz#fe3bdecfc94e9b4eb3aa2751cfb284e739e810be"
   integrity sha512-GP9t18RjtH67ea3DA2k71VqtMnTOupYJx34Z+KUEBRoRxvdETaucmtMWH5uoGHWzAD4qxbuV5ckxpewm39NXkA==
@@ -950,7 +950,7 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@material-ui/core@^4.7.2", "@material-ui/core@^4.8.2", "@material-ui/core@^4.8.3":
+"@material-ui/core@^4.7.2", "@material-ui/core@^4.8.3":
   version "4.8.3"
   resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-4.8.3.tgz#858f758b26d8417eb39310f07fb9d7a72beb8b03"
   integrity sha512-ZJbfJQmkuZCSQTf0nzpfZwizmDdCq8ruZxnPNFnhoKDqgJpMvV8TJRi8vdI9ls1tMuTqxlhyhw8556fxOpWpFQ==
@@ -1026,14 +1026,14 @@
 
 "@server-state/cbm-cli@https://github.com/server-state/cbm-cli":
   version "0.0.9"
-  uid "8d05070115d8c75b1ba4f4498cfcec84fe361740"
-  resolved "https://github.com/server-state/cbm-cli#8d05070115d8c75b1ba4f4498cfcec84fe361740"
+  uid "1ba0191d5c5c23b940ead8c46b2fafd7611df903"
+  resolved "https://github.com/server-state/cbm-cli#1ba0191d5c5c23b940ead8c46b2fafd7611df903"
   dependencies:
-    "@babel/cli" "^7.7.5"
-    "@babel/core" "^7.7.5"
-    "@babel/preset-env" "^7.7.6"
-    "@babel/preset-react" "^7.6.3"
-    "@material-ui/core" "^4.8.2"
+    "@babel/cli" "^7.8.0"
+    "@babel/core" "^7.8.0"
+    "@babel/preset-env" "^7.8.0"
+    "@babel/preset-react" "^7.8.0"
+    "@material-ui/core" "^4.8.3"
     "@material-ui/icons" "^4.5.1"
     "@material-ui/styles" "^4.8.2"
     "@server-state/cbm-test-environment" "https://github.com/server-state/cbm-test-environment"
