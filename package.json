@@ -1,14 +1,16 @@
 {
   "name": "@server-state/template-cbm",
+  "id": "<YOUR_ID_HERE>",
   "version": "0.0.9",
   "description": "Default template for client-base modules (cbm)",
-  "main": "index.js",
+  "main": "src/index.js",
   "private": true,
   "scripts": {
     "test": "server-state test",
     "test:e2e": "server-state test-e2e",
     "start": "server-state start",
     "build": "server-state build",
+    "eject": "server-state eject",
     "prepublish": "npm run build && npm run test"
   },
   "repository": {
@@ -18,9 +20,7 @@
   "keywords": [],
   "author": "server-state",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/server-state/template-cbm/issues"
-  },
+  "bugs": "https://github.com/server-state/template-cbm/issues",
   "homepage": "https://github.com/server-state/template-cbm#readme",
   "peerDependencies": {
     "@material-ui/core": "^4.8.3",
@@ -37,7 +37,6 @@
     "@server-state/cli": "https://github.com/server-state/cli",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "url-loader": "^3.0.0"
+    "react-dom": "^16.11.0"
   }
 }
