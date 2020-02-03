@@ -23,7 +23,7 @@
   "bugs": "https://github.com/server-state/template-cbm/issues",
   "homepage": "https://github.com/server-state/template-cbm#readme",
   "peerDependencies": {
-    "@material-ui/core": "^4.9.0",
+    "@material-ui/core": "^4.9.1",
     "@material-ui/icons": "^4.5.1",
     "@material-ui/styles": "^4.6.0",
     "prop-types": "^15.7.2",
@@ -31,7 +31,7 @@
     "react-dom": "^16.6.3"
   },
   "devDependencies": {
-    "@material-ui/core": "^4.9.0",
+    "@material-ui/core": "^4.9.1",
     "@material-ui/icons": "^4.5.1",
     "@material-ui/styles": "^4.6.0",
     "@server-state/cli": "https://github.com/server-state/cli",
