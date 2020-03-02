@@ -37,6 +37,6 @@
     "@server-state/cli": "https://github.com/server-state/cli",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react-dom": "^16.13.0"
   }
 }
