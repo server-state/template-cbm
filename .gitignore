@@ -63,3 +63,5 @@ typings/
 # idea configs
 .idea
 
+# build files
+*.cbm

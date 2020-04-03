@@ -16,7 +16,12 @@ function MyCBM(props) {
 }
 
 MyCBM.propTypes = {
-    data: PropTypes.any.isRequired
+    data: PropTypes.any.isRequired,
+    registerMenuItem: PropTypes.func.isRequired,
+    refresh: PropTypes.func.isRequired,
+    theme: PropTypes.object.isRequired,
+    storage: PropTypes.object.isRequired,
+    lang: PropTypes.string.isRequired
 };
 
 export default MyCBM;

@@ -11,7 +11,7 @@
     "start": "server-state start",
     "build": "server-state build",
     "eject": "server-state eject",
-    "prepublish": "npm run build && npm run test"
+    "publish": "server-state publish"
   },
   "repository": {
     "type": "git",
