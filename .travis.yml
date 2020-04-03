@@ -3,7 +3,8 @@ node_js:
   - 10
 
 script:
-  - yarn prepublish
+  - npm run build
+  - npm run test
 
 notifications:
   slack: serverstate:PcPgLd43m8TKiXrxfHb1mKff
