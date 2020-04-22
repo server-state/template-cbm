@@ -1,32 +1,31 @@
-# template-cbm
-A default template for client-base modules (cbm)
-with an integrated test environment with dynamically resizing data set selection.
+![Project Logo|]
+# [FEM-Name]
+[Badges]
 
-## Quick Start
-- Use this template in your new repository
-- Clone your new repository to your local working space.
-- Call `yarn` to install all required node packages
-- Run the test environment with `yarn start`
-  and open your preferred browser with the address:
-  (http://localhost:3001)
-- Open the file `./src/my-cbm.js` with your preferred file editor and begin developing!
+[Summary]
 
-## File Structure
-The `src` directory contains all required files for a working client-base module.
-The `src/index.js` references the necessary React component and the module info.
-You can change it any time and review your changes in the given test environment.
-You can use all Material-UI Components out-of-the-box and the current server-state client-base
-`test-environment/theme.js` which resides in the `test-environment` folder.
+This FEM is able to visualize:
+- [ ] a common data format: n/a
+- [ ] a specific Server Module: n/a
+- [ ] other: n/a
 
-If you want to change the sample data, simply edit the `src/sample-data.js`.
-Add, change or remove any objects from the list, the test environment dynamically changes the data selections.
-Please sustain the current format of an array containing objects with the keys `name` and `data`.
+![Screenshot|]
 
-All files regarding to it rest in the `test-environment` folder.
-Please do not make any changes to it, only if you know, what you do.
+## Usage
 
-If you finished with editing please take a look in the `tests` folder.
-Here you can write and run unit tests on your module with Jest and the command `yarn test`.
-If you finished and ready to publish, enter `yarn prepublish` and check that all tests finished successfully
-and that webpack create the transpiled file `ìndex.js` in the root directory.
-Edit the entries in the `package.json` to match your current definitions.
+This FEM can get used with the Server State's client-base client. To install it, open the FEM Manager and search for [FEM-Name].
+Then, click install, and your FEM immediately gets installed and be ready to use.
+
+After that, just apply the FEM in a widget on one of your dashboards using the Widget configuration screen by clicking Select FEM and selecting [FEM-Name] from the list.
+
+## Development
+
+For development, this project uses the Server State CLI (@server-state/cli on npm).
+As a local installation inside the project will do, run:
+```npm install```
+inside your project folder and you are ready to contribute.
+
+By running npm start, the FEM development environment will open in your standard browser where you can inspect the FEM in various environments.
+
+To build a .fem file after you're finished, run npm run build, and an index.fem gets built for you.
+You can then distribute the FEM to a FEM registry of your choice or privately, e.g., for internal company usage.
