@@ -25,7 +25,7 @@
   "peerDependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
-    "@material-ui/styles": "^4.10.0",
+    "@material-ui/styles": "^4.11.1",
     "prop-types": "^15.7.2",
     "react": "^16.6.1",
     "react-dom": "^16.6.3"
@@ -33,7 +33,7 @@
   "devDependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
-    "@material-ui/styles": "^4.10.0",
+    "@material-ui/styles": "^4.11.1",
     "@server-state/cli": "0.0.13",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
