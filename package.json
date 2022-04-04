@@ -24,7 +24,7 @@
   "homepage": "https://github.com/server-state/template-cbm#readme",
   "peerDependencies": {
     "@material-ui/core": "^4.12.3",
-    "@material-ui/icons": "^4.11.2",
+    "@material-ui/icons": "^4.11.3",
     "@material-ui/styles": "^4.11.4",
     "prop-types": "^15.8.1",
     "react": "^16.6.1",
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@material-ui/core": "^4.12.3",
-    "@material-ui/icons": "^4.11.2",
+    "@material-ui/icons": "^4.11.3",
     "@material-ui/styles": "^4.11.4",
     "@server-state/cli": "0.0.14",
     "prop-types": "^15.8.1",
